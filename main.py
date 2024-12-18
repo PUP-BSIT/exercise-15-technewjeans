@@ -1,4 +1,5 @@
 import os
+from technewjeans.genandoy import OrderSystem
 from technewjeans.mejares import Gamble
 from technewjeans.uy import Game
 from technewjeans.villas import Music
@@ -31,7 +32,8 @@ def process_choice(choice):
             pass
         case "2":
             os.system('cls')
-            pass
+            order_system = OrderSystem()  
+            order_system.get_menu() 
         case "3":
             os.system('cls')
             gamble = Gamble(profile={}, balance=0.0, luck=0.0)
