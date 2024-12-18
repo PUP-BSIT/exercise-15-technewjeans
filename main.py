@@ -1,4 +1,5 @@
 import os
+from technewjeans.mejares import Gamble
 from technewjeans.uy import Game
 
 EXIT_OPTION = " "
@@ -32,7 +33,8 @@ def process_choice(choice):
             pass
         case "3":
             os.system('cls')
-            pass
+            gamble = Gamble(profile={}, balance=0.0, luck=0.0)
+            gamble.display_user_choices()
         case "4":
             os.system('cls')
             Game.game_menu()
