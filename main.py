@@ -1,4 +1,5 @@
 import os
+from technewjeans.francisco import Information
 from technewjeans.genandoy import OrderSystem
 from technewjeans.mejares import Gamble
 from technewjeans.uy import Game
@@ -29,7 +30,8 @@ def process_choice(choice):
     match choice:
         case "1":
             os.system('cls')
-            pass
+            information = Information(age=19, city="Taguig City", school="PUP")
+            information.menu()
         case "2":
             os.system('cls')
             order_system = OrderSystem()  
