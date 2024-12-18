@@ -52,7 +52,7 @@ class Game:
             choice = Game.uy_menu()
             Game.process_choice(choice, hero, villain)
             
-    def uy_menu():
+    def get_menu():
         os.system('cls')
         print("\n--- Game Menu ---")
         print("1. Hero or Villain attacks")
