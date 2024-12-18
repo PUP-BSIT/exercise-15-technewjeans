@@ -2,8 +2,8 @@ import os
 from technewjeans.mejares import Gamble
 from technewjeans.uy import Game
 
-EXIT_OPTION = " "
-UNSET_OPTION = "6"
+EXIT_OPTION = "6"
+UNSET_OPTION = "0"
 
 def main():
     choice = UNSET_OPTION
@@ -42,6 +42,7 @@ def process_choice(choice):
             os.system('cls')
             pass
         case "6":
+            print("Exiting the program. Goodbye!")
             pass
         case _:
             print("Invalid choice. Please try again.")
