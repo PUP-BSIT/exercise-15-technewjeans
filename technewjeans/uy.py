@@ -49,7 +49,7 @@ class Game:
         villain = Game("Villain", 80, 15)
         choice = Game.UNSET_OPTION
         while choice != Game.EXIT_OPTION:
-            choice = Game.uy_menu()
+            choice = Game.get_menu()
             Game.process_choice(choice, hero, villain)
             
     def get_menu():
