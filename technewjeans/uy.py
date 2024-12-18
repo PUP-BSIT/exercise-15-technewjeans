@@ -1,5 +1,6 @@
 #Uy module
 import os
+import time
 
 class Game:
     UNSET_OPTION = -1
@@ -109,6 +110,8 @@ class Game:
                 villain.get_status()
                 input("\nPress enter to continue.")
             case 6:
+                print("Exiting game menu.")
+                time.sleep(1)
                 pass
             case _:
                 print("Invalid choice, please select a valid option.")
