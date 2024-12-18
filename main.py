@@ -1,6 +1,7 @@
 import os
 from technewjeans.mejares import Gamble
 from technewjeans.uy import Game
+from technewjeans.villas import Music
 
 EXIT_OPTION = "6"
 UNSET_OPTION = "0"
@@ -40,7 +41,12 @@ def process_choice(choice):
             Game.game_menu()
         case "5":
             os.system('cls')
-            pass
+            song_title = input("Enter the Song Title: ")
+            song_writer = input("Enter the Song Writer: ")
+            genre = input("Enter the Genre: ")
+            year_release = input("Enter the Year of Release: ")
+            music1 = Music(song_title, song_writer, genre, year_release)
+            music1.menu()
         case "6":
             print("Exiting the program. Goodbye!")
             pass
